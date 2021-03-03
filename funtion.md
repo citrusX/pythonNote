@@ -56,10 +56,9 @@ cat: harry, 2 years old.
 ```
 def make_pizza(*toppings):
     print(toppings)
-
-make_pizza('mushroom', 'green pepper', 'onion')
 ```
 输出为
 ```
+make_pizza('mushroom', 'green pepper', 'onion')
 ('mushroom', 'green pepper', 'onion')
 ```
