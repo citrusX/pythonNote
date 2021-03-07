@@ -60,5 +60,72 @@ def make_pizza(*toppings):
 输出为
 ```
 make_pizza('mushroom', 'green pepper', 'onion')
+
+
 ('mushroom', 'green pepper', 'onion')
+```
+
+# 调用函数
+1. 导入整个模块
+
+调用时 
+```
+import 模块名
+
+模块名.函数名()
+```
+
+pizza.py
+```
+def make_pizza(*toppings):
+    print(toppings)
+```
+
+making_pizza.py
+```
+import pizza
+
+pizza.make_pizza('mushroom', 'green pepper', 'onion')
+```
+2.  导入特定函数
+调用时 
+```
+from 模块名 import 函数名
+
+函数名()
+```
+
+```
+from pizza import make_pizza
+
+make_pizza('mushroom', 'green pepper', 'onion')
+```
+
+3. 使用 as 给模块指定别名
+
+调用时
+```
+import 模块名 as newName
+
+newName.函数名()
+```
+
+```
+import pizza as p
+
+p.make_pizza('mushroom', 'green pepper', 'onion')
+```
+
+4. 导入模块中所有函数
+
+调用时 
+```
+from 模块名 import *
+
+函数名()
+```
+```
+from pizza import *
+
+make_pizza('mushroom', 'green pepper', 'onion')
 ```
