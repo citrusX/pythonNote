@@ -98,3 +98,8 @@ import 文件名
 
 import car
 ```
+
+# self 的功能
+**<font size=5><font color=Orange>self代表类的实例，而非类。</font></font>**
+
+一旦产生了一个实例，那么self就会一直是传入的那个实例。这样也保证了即使生成多个新的实例，也不会把原来的实例和新的实例弄乱了。

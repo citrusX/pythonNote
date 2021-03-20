@@ -130,6 +130,27 @@ print(cars[-2:])
 #打印后两个
 ['subaru', 'honda']
 ```
+一种神奇的用法：
+```
+import numpy as np
+a=np.random.rand(5)
+print(a)
+[ 0.64061262  0.8451399   0.965673    0.89256687  0.48518743]
+ 
+print(a[-1]) ###取最后一个元素
+[0.48518743]
+ 
+print(a[:-1])  ### 除了最后一个取全部
+[ 0.64061262  0.8451399   0.965673    0.89256687]
+ 
+print(a[::-1]) ### 取从后向前（相反）的元素
+[ 0.48518743  0.89256687  0.965673    0.8451399   0.64061262]
+ 
+print(a[2::-1]) ### 取从下标为2的元素翻转读取
+[ 0.965673  0.8451399   0.64061262]
+```
+
+
 
 ### 复制列表
 1. 创建列表的副本
@@ -157,4 +178,19 @@ print(cars)
 print(new_cars)
 ['bmw', 'audi', 'toyota', 'subaru', 'honda', 'benz']
 #此时new_cars 与cars 指向同一个列表
+```
+
+## 列表最大值
+
+```max(list)```
+```
+list1, list2 = ['123', 'xyz', 'zara', 'abc'], [456, 700, 200]
+
+print "Max value element : ", max(list1);
+print "Max value element : ", max(list2);
+```
+结果为
+```
+Max value element :  zara
+Max value element :  700
 ```
