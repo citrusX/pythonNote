@@ -1,5 +1,5 @@
 # 传递实参
-```
+```python
 def describe_pet(animaltype, animalname):
     """宠物信息"""
     print("I have a " + animaltype + "." )
@@ -8,24 +8,24 @@ def describe_pet(animaltype, animalname):
 ```
 ## 位置实参
 
-```
+```python
 #按照顺序传入参数
 describe_pet(dog, willie)
 ```
 ## 关键字实参
-```
+```python
 #顺序不重要
 describe_pet(animalname = 'willie', animaltype = 'dog')
 ```
 ## 默认值
-```
+```python
 def describe_pet(animaltype = 'dog', animalname):
      """宠物信息"""
     print("I have a " + animaltype + "." )
     print("The name is "+ animalname.title() + ".")
 ```
 调用时
-```
+```python
 describe_pet('willie')
 #输出 dog willie
 
@@ -35,7 +35,7 @@ describe_pet(animaltype = 'cat', animalname = 'harry')
 
 # 返回值
 ## 让实参变为可选值
-```
+```python
 def describe_pet(animaltype, animalname, animalage=''):
     if animalage:
         animaldata = animaltype +': '+ animalname + ', '+ animalage +' years old.'
@@ -44,7 +44,7 @@ def describe_pet(animaltype, animalname, animalage=''):
     return animaldata  
 ```
 输出为
-```
+```python
 print(describe_pet("dog", "willie"))
 dog: willie. No age details.
 
@@ -53,12 +53,12 @@ cat: harry, 2 years old.
 ```
 
 # 传递任意数量的实参
-```
+```python
 def make_pizza(*toppings):
     print(toppings)
 ```
 输出为
-```
+```python
 make_pizza('mushroom', 'green pepper', 'onion')
 
 
@@ -69,33 +69,33 @@ make_pizza('mushroom', 'green pepper', 'onion')
 1. 导入整个模块
 
 调用时 
-```
+```python
 import 模块名
 
 模块名.函数名()
 ```
 
 pizza.py
-```
+```python
 def make_pizza(*toppings):
     print(toppings)
 ```
 
 making_pizza.py
-```
+```python
 import pizza
 
 pizza.make_pizza('mushroom', 'green pepper', 'onion')
 ```
 2.  导入特定函数
 调用时 
-```
+```python
 from 模块名 import 函数名
 
 函数名()
 ```
 
-```
+```python
 from pizza import make_pizza
 
 make_pizza('mushroom', 'green pepper', 'onion')
@@ -104,13 +104,13 @@ make_pizza('mushroom', 'green pepper', 'onion')
 3. 使用 as 给模块指定别名
 
 调用时
-```
+```python
 import 模块名 as newName
 
 newName.函数名()
 ```
 
-```
+```python
 import pizza as p
 
 p.make_pizza('mushroom', 'green pepper', 'onion')
@@ -119,12 +119,12 @@ p.make_pizza('mushroom', 'green pepper', 'onion')
 4. 导入模块中所有函数
 
 调用时 
-```
+```python
 from 模块名 import *
 
 函数名()
 ```
-```
+```python
 from pizza import *
 
 make_pizza('mushroom', 'green pepper', 'onion')

@@ -1,7 +1,7 @@
 # 创建类
 
 Dog.py
-```
+```python
 class Dog():
     def __init__(self, name, age):
         self.name = name
@@ -15,13 +15,13 @@ class Dog():
 
 ```
 创建类时
-```
+```python
 my_dog = Dog('willie', 6)
 ```
 
 ---
 *java中创建类*
-```
+```java
 public class Person{
     private String name;
     private int age;
@@ -40,7 +40,7 @@ public class Person{
 }
 ```
 创建实例
-```
+```java
 public class Tom{
     public static void main(String[] args) {
         Person pe=new Person("Tom",16);
@@ -55,7 +55,7 @@ public class Tom{
 2. 使用```super().__init__()``` 从父类中继承。
 3. 可在子类中重写父类中同名方法。
 
-```
+```python
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -83,7 +83,7 @@ my_tesla.describe_battery()
 
 # 导入类
 1. 导入单个或多个类
-```
+```python
 from 文件名 import 类名
 
 from car import Car
@@ -93,7 +93,7 @@ from car import Car, ElectricCar
 ```
 
 2. 导入整个模块
-```
+```python
 import 文件名
 
 import car
